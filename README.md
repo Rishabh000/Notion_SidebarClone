@@ -1,13 +1,28 @@
-The specific reference component/section chosen:
+# Notion Sidebar Clone
 
-I chose the Notion sidebar for the cloning.
+Replication of the **Notion Sidebar** built with Next.js, React, and Tailwind CSS.
 
-A list of all external libraries or AI tools used.
-I used ChatGPT and Cursor tool.
+## Reference Component
 
-The Workflow Efficiency Report: A short section describing one or two specific methods or automations the candidate used to speed up the replication process.
+I chose the **Notion Sidebar** as the reference component for cloning. This includes the workspace switcher, navigation sections, page tree, search dialog, settings panel, trash panel, and sidebar footer, replicating the full sidebar experience.
 
-I copied the style code using the inspect to speed up the replication process.
+## External Libraries & AI Tools Used
+
+### Libraries
+- **Next.js** (v16.1.6) — React framework
+- **React** (v19.2.3) — UI library
+- **Tailwind CSS** (v4) — Utility-first CSS framework
+- **Lucide React** (v0.563.0) — Icon library
+
+### AI Tools
+- **ChatGPT** — Used for generating component logic and debugging
+- **Cursor** — AI-powered code editor used for faster development and code suggestions
+
+## Workflow Efficiency Report
+
+1. **Inspecting & Copying Styles:** I used the browser DevTools (Inspect Element) on the actual Notion sidebar to extract exact CSS styles (colors, spacing, font sizes, etc.), which significantly sped up the visual replication process instead of eyeballing every value.
+
+2. **AI-Assisted Development:** Using Cursor and ChatGPT to generate boilerplate code, and iterate on the sidebar's interactive behavior, reducing the overall development time.
 
 ## Getting Started
 
@@ -37,5 +52,6 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
