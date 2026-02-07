@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --notion-text: rgb(55, 53, 47);
+  --notion-text-secondary: rgba(55, 53, 47, 0.65);
+  --notion-text-tertiary: rgba(55, 53, 47, 0.45);
+  --notion-hover: rgba(55, 53, 47, 0.04);
+  --notion-active: rgba(55, 53, 47, 0.08);
+  --notion-border: rgba(55, 53, 47, 0.09);
+  --notion-sidebar-bg: #fbfbfa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sidebar hover states */
+.sidebar-item:hover {
+  background-color: rgba(55, 53, 47, 0.04);
+}
+
+.sidebar-item:active {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+/* Sidebar scrollbar styling (Notion-like thin scrollbar) */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(55, 53, 47, 0.16);
+  border-radius: 3px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(55, 53, 47, 0.3);
+}
+
+/* Hide scrollbar when not hovering */
+.sidebar-scroll {
+  scrollbar-gutter: stable;
+}
+
+.sidebar-scroll:not(:hover)::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
